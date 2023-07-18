@@ -1,14 +1,16 @@
 *{
-    margin: 10px;
-    padding: 10px;
+    margin: 0.5%;
+    padding: 0.5%;
     box-sizing: border-box;
+    max-width: 1200px;
+    
 }
 body{
     font-family: Arial;
 
 }
 .padre{
-   
+
     display: flex;
     flex-flow: column nowrap;
 }
@@ -19,20 +21,25 @@ body{
    background-size: cover;
    display: flex;
    flex-flow:column nowrap ;
+   height:  5%;
    
 }
     .menu{
         display: flex;
         flex-flow: row nowrap;
-        height: 140px;
-        align-items: center;
+        height: 850%;
+        align-items: flex-start;
+        
+        
     }
         .logo{ 
             flex: 1 1 auto;
+            
         }
             .logo img{
                 width: 100px;
                 height: auto;
+                
         }
         .nav{
             flex: 5 1 auto;
@@ -52,7 +59,7 @@ body{
             display: flex;
             flex-direction: row;
             flex-wrap: nowrap;
-            justify-content: flex-end;
+            justify-content: space-around;
             align-content: right;
         }
             .social a{
@@ -74,40 +81,72 @@ body{
             text-align: center;   
             opacity:75%;
         }
-   
+      
 .section{
-    background: #000;
+    background:#dfdbdb;
     display: flex;
+    flex: 2 1 auto;
+     
+    
 }
     .articulos{
-        background: #164B60;
+        background: #dfdbdb;
         flex: 2 1 auto;
         display: flex;
         flex-flow: wrap;
     }
         .article{
-            background: #1B6B93;
+            background: #ede7e7;
             flex: 1 1 40%;
         }
+            #imagenes{
+                width: 100%;
+                }
+            .titulo{
+                background: #e5706e;
+                color: white;
+                height: 6%;
+            }
+           .article p{
+                column-count:2;
+                color:#585b5c;
+                width: auto;
+            }
+            .article a{
+                cursor:grabbing;
+                text-decoration: none;
+                color:#7c878d;
+            }
+            .article a:hover{
+                color:white;
+                font-size: 20px;
+            }
+
+
         .navegacion{
-            background: #4FC0D0;
+            background:#dfdbdb;
             flex: 1 1 100%;
+            text-align: center;
         }
     .aside{
-        background: #9DB2BF;
-        flex: 1 1 auto;
+        flex-direction: column;
+        background: #dfdbdb;
+        flex: 8 1 auto;
+         
     }
         .publicidad{
-            background: #A2FF86;
+            background: #dfdbdb;
+            text-align: center;
         }
-        .publicidad{
-            background: #A2FF86;
-        }
+        
 .footer{
-    background: #000;
+    background:  #dfdbdb;
+    
 }
     .pie{
-        background: #F9F54B;
+        background:  #ede7e7;
+        text-align: center;
+       
     }
 @media all and (max-width:800px){
    .section{
